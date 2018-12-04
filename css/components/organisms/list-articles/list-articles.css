@@ -1,0 +1,38 @@
+.list-articles {
+	display: grid;
+	/*
+	grid-template-columns: repeat(4, 14vw);
+	grid-template-rows: repeat(6, 14vw) 1fr;
+	*/
+	grid-template-areas:	"A B C D"
+												"E F G H"
+												"I J K L"
+												"M N O P"
+												"Q R S T"
+												"U V W X";
+	grid-gap: 2vw;
+}
+.main-content article:nth-child(1) {
+	grid-area: C;
+}
+.main-content article:nth-child(2) {
+	grid-area: H;
+}
+.main-content article:nth-child(3) {
+	grid-area: I;
+}
+.main-content article:nth-child(4) {
+	grid-area: N;	
+}
+.main-content article:nth-child(5) {
+	grid-area: P;	
+}
+.main-content article:nth-child(6) {
+	grid-area: Q;	
+}
+.main-content article:nth-child(7) {
+	grid-area: S;	
+}
+.main-content article:nth-child(8) {
+	grid-area: A;	
+}

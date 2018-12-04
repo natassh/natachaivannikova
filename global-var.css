@@ -1,0 +1,15 @@
+:root {
+    --color-text-title: #FFD274;
+    --color-text-description: #fff;
+    --color-main: #000033;
+
+    --main-title-font: 'Lato', sans-serif;
+    --main-text-font: 'Merriweather', serif;
+    --squalor: 'Squalor', sans-serif;
+    --lombok: 'Lombok', sans-serif;
+    --gingham: 'Gingham';
+
+    --bold: 700;
+    --regular: 400;
+    --light: 300;
+}

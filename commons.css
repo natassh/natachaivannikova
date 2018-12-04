@@ -1,0 +1,138 @@
+html {
+	background: url(../files/img3.jpg) no-repeat;
+	background-size: cover;
+	background-position-x: 16%;
+	background-position-x: 94%;
+	font-family: var(--main-font);
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 90vw;
+	margin: 3rem 5rem;
+}
+
+body .ly-content {
+	display: grid;
+	grid-template-columns: repeat(6, 14vw);
+	grid-template-rows: repeat(6, 14vw) 1fr;
+	grid-gap: 2vw;
+}
+
+/* 
+ANIMATIONS 
+
+.animColor a {
+	transition: background-color 0.8s linear 0.2s;
+}
+.animColor a:hover {
+  background-color: #FFD274;
+}
+.animColor .box-article__title {
+	transition: color 0.8s linear 0.4s;
+}
+.animColor a:hover .box-article__title {
+  color: #000033;
+}
+.animColor strong {
+	transition: color 0.8s linear 0.4s;
+}
+.animColor  a:hover strong {
+  color: #000033;
+}
+*/
+/* animShow */
+.animShow {
+  -webkit-animation-name: animShow;
+  animation-name: animShow;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes animShow {
+	0% {
+	opacity: 0;
+	-webkit-transform: scale3d(.3, .3, .3);
+	transform: scale3d(.3, .3, .3);
+	}
+	50% {
+	opacity: 1;
+	}
+}
+@keyframes animShow {
+	0% {
+	opacity: 0;
+	-webkit-transform: scale3d(.3, .3, .3);
+	transform: scale3d(.3, .3, .3);
+	}
+	50% {
+	opacity: 1;
+	}
+} 
+/* animShow2 */
+.animShow2 {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+/* animShow3 */
+.animShow3 {
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+}
+/* animShow4 */
+.animShow4 {
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+}
+
+/* RWD */
+
+@media screen and (max-width: 1445px) {
+	body .ly-content {
+		grid-template-columns: repeat(5, 17vw);
+    grid-template-rows: repeat(6, 16vw) 1fr;
+	}
+}
+@media screen and (max-width: 1190px) {
+	body .ly-content {
+		grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(6, 20vw) 1fr;
+	}
+}
+@media screen and (max-width: 978px) {
+  body {
+		margin: 3rem 3rem;
+	}
+	body .ly-content {
+		display: block;
+	}
+	body .main-content {
+		margin-bottom: 3.1rem;
+	}
+}
+@media screen and (max-width: 700px) {
+	body {
+    margin: 3rem 2rem;
+	}
+}
+@media screen and (max-width: 521px) {
+	body {
+    margin: 3rem 1.6rem;
+	}
+}
+@media screen and (max-width: 480px) {
+	body {
+		width: 100%;
+		margin: 1.5rem 0 1.2rem 0;
+	}
+	body .main-content {
+    margin-bottom: 2.1rem;
+	}
+}
+@media screen and (max-width: 400px) {
+	body .main-content {
+    margin-bottom: 1.2rem;
+	}
+}

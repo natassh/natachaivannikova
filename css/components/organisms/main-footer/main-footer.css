@@ -1,0 +1,32 @@
+.main-footer {
+	grid-row: 6 / 7;
+	grid-column: 5 / 7;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+.main-footer h4, .main-footer__title {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: var(--main-title-font);
+	padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+	background: #FF8080;
+	font-size: 0.8rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+.main-footer p, .main-footer__description {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: var(--main-text-font);
+	font-style: var(--regular);
+	font-size: 0.8rem;
+	color: #fff;
+	padding: 0.9rem 0.6rem 0.9rem 0.6rem;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 0 0 5px 5px;
+}
